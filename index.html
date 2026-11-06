@@ -1,20 +1,87 @@
+
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>JPRISM | Inventory &amp; Work Order Management</title>
 <link rel="icon" type="image/png" href="jprism-icon.png">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <section class="welcome" id="welcome" aria-label="JPRISM welcome">
- <div class="welcome-hero"><div class="welcome-kicker">JPRISM · Management Platform</div>
- <div><div class="welcome-kicker">One platform. Clearer operations.</div><h1>Take control of your inventory and work orders.</h1><p>Bring stock visibility, production planning and operational workflows together in one organised workspace.</p></div>
- <div class="welcome-footer">JPRISM · v0.3A Product Master Data</div></div>
- <div class="welcome-entry"><div class="welcome-panel"><img class="welcome-logo" src="jprism-logo.png" alt="JPRISM — Inventory & Work Order Management"><h2>Welcome to JPRISM</h2><p>Explore the platform and see how your inventory and operations could come together.</p><button class="welcome-enter" id="enter-demo" type="button">Enter JPRISM Demo →</button><div class="welcome-note">Demo preview only · No account required · All inventory data is fictional. This page is not a secure login.</div></div></div>
+  <div class="welcome-hero">
+    <div class="welcome-kicker">JPRISM · Management Platform</div>
+    <div>
+      <div class="welcome-kicker">One platform. Clearer operations.</div>
+      <h1>Take control of your inventory and work orders.</h1>
+      <p>Bring stock visibility, production planning and operational workflows together in one organised workspace.</p>
+    </div>
+    <div class="welcome-footer">JPRISM · v0.3A Product Master Data</div>
+  </div>
+  <div class="welcome-entry">
+    <div class="welcome-panel">
+      <img class="welcome-logo" src="jprism-logo.png" alt="JPRISM — Inventory & Work Order Management">
+      <h2>Welcome to JPRISM</h2>
+      <p>Explore the platform and see how your inventory and operations could come together.</p>
+      <button class="welcome-enter" id="enter-demo" type="button">Enter JPRISM Demo →</button>
+      <div class="welcome-note">Demo preview only · No account required · All inventory data is fictional. This page is not a secure login.</div>
+    </div>
+  </div>
 </section>
-<div class="overlay" id="overlay"></div><div class="app"><aside class="sidebar" id="sidebar"><div class="brand"><span class="brandmark"><img src="jprism-icon.png" alt="JPRISM prism logo"></span><span>JPRISM <small style="display:block;font-size:10px;font-weight:500;color:#a6c4d6;letter-spacing:1px;margin-top:3px">MANAGEMENT PLATFORM</small></span></div><div class="navlabel">WORKSPACE</div><nav id="nav"></nav><div class="sidefoot">v0.3A product master data<br>Sample data only · v0.3A</div></aside><main class="main"><header class="topbar"><div style="display:flex;align-items:center;gap:14px"><button class="mobilebar" id="menu" aria-label="Open menu">☰</button><span class="crumb">Workspace / <strong id="crumb">Dashboard</strong></span></div><span class="pill">● Demo mode</span></header><div class="content"><div class="heading"><div><div class="eyebrow">Inventory & operations</div><h1 id="title">Dashboard</h1><p class="muted" id="subtitle">A clear view of your business, all in one place.</p></div><button class="btn" id="tour">About this prototype</button></div><div class="notice">This is a browser-only prototype. Products and stock movements are saved on this device only; work orders and production are not yet implemented. Do not enter real business data.</div><div id="page"></div></div></main></div>
+
+<div class="overlay" id="overlay"></div>
+
+<div class="app">
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <span class="brandmark">
+        <img src="jprism-icon.png" alt="JPRISM prism logo">
+      </span>
+      <span>JPRISM
+        <small style="display:block;font-size:10px;font-weight:500;color:#a6c4d6;letter-spacing:1px;margin-top:3px">
+          MANAGEMENT PLATFORM
+        </small>
+      </span>
+    </div>
+    <div class="navlabel">WORKSPACE</div>
+    <nav id="nav"></nav>
+    <div class="sidefoot">
+      v0.3A product master data
+      <br>Sample data only · v0.3A
+    </div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <div style="display:flex;align-items:center;gap:14px">
+        <button class="mobilebar" id="menu" aria-label="Open menu">☰</button>
+        <span class="crumb">Workspace / <strong id="crumb">Dashboard</strong></span>
+      </div>
+      <span class="pill">● Demo mode</span>
+    </header>
+
+    <div class="content">
+      <div class="heading">
+        <div>
+          <div class="eyebrow">Inventory &amp; operations</div>
+          <h1 id="title">Dashboard</h1>
+          <p class="muted" id="subtitle">A clear view of your business, all in one place.</p>
+        </div>
+        <button class="btn" id="tour">About this prototype</button>
+      </div>
+
+      <div class="notice">
+        This is a browser-only prototype. Products and stock movements are saved on this device only; work orders and production are not yet implemented. Do not enter real business data.
+      </div>
+
+      <div id="page"></div>
+    </div>
+  </main>
+</div>
+
 <script src="storage.js"></script>
 <script src="inventory.js"></script>
 <script src="app.js"></script>
-</body></html>
+</body>
+</html>
