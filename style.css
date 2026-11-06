@@ -24,3 +24,5 @@
 
 /* v0.2 inventory editor */
 .form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:15px 0}.form-grid label{font-size:12px;font-weight:700;display:flex;flex-direction:column;gap:5px}.form-grid input,.form-grid select{min-width:0;width:100%}.actions{display:flex;gap:8px;flex-wrap:wrap}.statusline{font-size:13px;color:#176f62;margin:10px 0}.danger{color:#b23d3d}.btn.danger{color:#b23d3d}.btn.primary{background:#178b7c;color:white}.editor{margin-bottom:20px}.table-actions{white-space:nowrap}@media(max-width:600px){.form-grid{grid-template-columns:1fr}}
+/* v0.3A product master data */
+.check-row{display:flex;flex-wrap:wrap;gap:24px;margin:12px 0 20px}.check-row label{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:650}.check-row input{min-width:0;flex:none;min-height:0;width:17px;height:17px}.form-grid label{line-height:1.45}.form-grid input,.form-grid select{font-size:14px}.table-actions .btn{padding:7px 9px}.statusline{font-weight:700}
